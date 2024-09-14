@@ -1,0 +1,14 @@
+@THY.Testing.Api_HostAddress = http://localhost:5121
+
+POST {{THY.Testing.Api_HostAddress}}/customer/initdata
+Content-Type: application/json
+###
+POST {{THY.Testing.Api_HostAddress}}/customer/1001/score/100
+Content-Type: application/json
+###
+GET {{THY.Testing.Api_HostAddress}}/leaderboard?start=101&end=200
+Accept: application/json
+###
+GET {{THY.Testing.Api_HostAddress}}/leaderboard/1001?high=3&low=3
+Accept: application/json
+###
